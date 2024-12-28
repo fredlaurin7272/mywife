@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wife's Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+        }
+        .about {
+            padding: 50px 0;
+        }
+        .contact {
+            background-color: #e9ecef;
+            padding: 50px 0;
+        }
+        .about img {
+            max-width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Wife's Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1 class="text-primary">Welcome to My Wife's Website</h1> <!-- Added .text-primary here -->
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="about text-center">
+        <div class="container">
+            <h2>About Uyen Pham</h2>
+            <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t39.30808-6/432779594_10159977639531915_7175356407113571209_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFBcD3wCKuGCa0tGwryLtb5UcoQ1_YspmdRyhDX9iymZ1kMdfr9s4hhhEe4VMVvDXU&_nc_ohc=Nj_IBdR8DJ8Q7kNvgGTtwjw&_nc_zt=23&_nc_ht=scontent-nrt1-1.xx&_nc_gid=A1IaYztpxatuoWTn7w7_LNV&oh=00_AYDgABX7jj9xH4d8NBXN_k_IV6ow3FRiBJfE0S7I5I5Z2A&oe=6775187B" alt="Uyen Pham's Picture">
+            <p>Uyen Pham is an experienced business development executive and currently serves as the Assessment Services Lead for ASEAN, Australasia, Japan, and Korea at Cambridge University Press & Assessment. With over 17 years of experience in the education management industry, Uyen is skilled in language assessment, curriculum development, and intercultural communication.</p>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="/submit" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
